@@ -1,0 +1,175 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #ffe6cc; /* Fundo claro com tom de laranja */
+    color: #333; /* Texto em tom escuro */
+    padding-top: 90px;
+}
+
+/* Cabeçalho e menu de navegação */
+.menu {
+    background-color: #ffcc80; /* Laranja claro */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu ul li a:hover {
+    background: #e65100; /* Laranja mais escuro */
+    transform: scale(1.1); /* Leve aumento */
+}
+
+/* Logo */
+.logo img {
+    max-height: 70px;
+}
+#livros{
+    display: flex;
+    width: 350px;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background: #fff3e0; /* Fundo suave */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffebcc; /* Fundo de seção */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color: #e65100; /* Destaque em laranja forte */
+    margin-bottom: 15px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ffcc80;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ffe0b2; /* Fundo do cabeçalho */
+    color: #e65100; /* Texto laranja */
+}
+
+table tr:nth-child(even) {
+    background-color: #fffaf3;
+}
+
+/* Listas */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e65100;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffcc80;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e65100;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #bf360c; /* Laranja mais escuro */
+}
+
+/* Rodapé */
+footer {
+    background: #e65100; /* Laranja escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Imagens e vídeos */
+img, video {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
